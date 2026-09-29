@@ -6,6 +6,9 @@
 <title>{{meta_titre}}</title>
 <meta name="description" content="{{meta_desc}}">
 {{alternates}}
+<link rel="icon" href="{{racine}}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{{racine}}favicon.png" sizes="32x32">
+<link rel="apple-touch-icon" href="{{racine}}apple-touch-icon.png">
 <link rel="preload" href="{{racine}}fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{racine}}style.css">
 <script src="{{racine}}script.js" defer></script>
@@ -184,7 +187,7 @@
   </article>
 
   <article class="projet">
-    <a class="lien-image" href="{{racine}}opti-elevage/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><div class="planche" aria-hidden="true">
+    <a class="lien-image" href="{{racine}}planificateur-croisements/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><div class="planche" aria-hidden="true">
       <svg class="ill" viewBox="0 0 640 400">
         <path class="i-axe" d="M60 320 H 600 M60 320 V 50"/>
         <text class="i-petit" x="330" y="374" text-anchor="middle">{{ill_gen}}</text>
@@ -209,8 +212,8 @@
       <h3>{{opti_t}}</h3>
       <p>{{opti_p}}</p>
       <p class="liens">
-        <a href="{{racine}}opti-elevage/" target="_blank" rel="noopener">{{lien_demo}}</a>
-        <a href="https://github.com/Exzitech/opti-elevage" target="_blank" rel="noopener">{{code}}, 63 {{tests}}</a>
+        <a href="{{racine}}planificateur-croisements/" target="_blank" rel="noopener">{{lien_demo}}</a>
+        <a href="https://github.com/Exzitech/planificateur-croisements" target="_blank" rel="noopener">{{code}}, 63 {{tests}}</a>
       </p>
     </div>
   </article>
@@ -242,7 +245,7 @@
     </article>
 
     <article class="projet-image">
-      <a class="lien-image" href="{{racine}}editeur-pdf/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><div class="fenetre"><span class="barre" aria-hidden="true"></span><img src="{{racine}}img/editeur-pdf.png" alt="{{pdf_alt}}" width="1023" height="722" loading="lazy"></div></a>
+      <a class="lien-image" href="{{racine}}editeur-pdf/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><div class="fenetre"><span class="barre" aria-hidden="true"></span><img src="{{racine}}img/editeur-pdf.png" alt="{{pdf_alt}}" width="1300" height="850" loading="lazy"></div></a>
       <p class="etiquette">TypeScript · pdf.js · pdf-lib</p>
       <h3>{{pdf_t}}</h3>
       <p>{{pdf_p}}</p>

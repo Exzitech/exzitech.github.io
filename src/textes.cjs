@@ -59,7 +59,7 @@ module.exports = {
       sur trois niveaux, restauration testée, surveillance, et des retours d'incident écrits.`,
     lab_lien: "Modèle et documentation",
     opti_etiq: "Aide à la décision",
-    opti_t: "Opti Élevage, planifier par la simulation",
+    opti_t: "Planificateur de croisements, planifier par la simulation",
     opti_p: `Quand chaque décision a un résultat aléatoire, l'outil simule des centaines de
       parties pour chaque option, toutes sur les mêmes tirages&nbsp;: l'écart mesuré vient du
       choix, pas du hasard. Modèle calibré sur des données réelles, calcul hors du fil
@@ -162,7 +162,7 @@ module.exports = {
       restores, monitoring, and written incident reports.`,
     lab_lien: "Template and documentation",
     opti_etiq: "Decision support",
-    opti_t: "Opti Élevage, planning by simulation",
+    opti_t: "Breeding planner, planning by simulation",
     opti_p: `When every decision has a random outcome, the tool simulates hundreds of runs for
       each option, all on the same random draws: the measured difference comes from the choice,
       not from luck. The model is calibrated on real data and runs off the main thread, in
@@ -268,7 +268,7 @@ module.exports = {
       incidentverslagen.`,
     lab_lien: "Sjabloon en documentatie",
     opti_etiq: "Beslissingsondersteuning",
-    opti_t: "Opti Élevage, plannen met simulatie",
+    opti_t: "Kruisingsplanner, plannen met simulatie",
     opti_p: `Als elke beslissing een willekeurige uitkomst heeft, simuleert de tool honderden
       rondes per optie, allemaal met dezelfde trekkingen: het gemeten verschil komt van de keuze,
       niet van het toeval. Het model is gekalibreerd op echte gegevens en rekent buiten de
