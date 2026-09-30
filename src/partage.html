@@ -1,0 +1,116 @@
+<!doctype html>
+<!-- Source de img/partage.png (1200x630), l'image des liens partages.
+     Rendue par `node src/partage.cjs` ; ne pas retoucher le PNG a la main. -->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: "Bricolage Grotesque";
+    src: url("../fonts/bricolage.woff2") format("woff2");
+    font-weight: 200 800;
+  }
+  @font-face {
+    font-family: "Instrument Sans";
+    src: url("../fonts/instrument-sans.woff2") format("woff2");
+    font-weight: 400 700;
+  }
+  :root {
+    --fond: #f6f1e9;
+    --fond-2: #ede5d8;
+    --encre: #1b1a17;
+    --doux: #5f584e;
+    --filet: #d6cbb9;
+    --accent: #b04a1f;
+    --surligne: #f1c9a8;
+    --vert: #3c8a55;
+  }
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    width: 1200px;
+    height: 630px;
+    background: var(--fond);
+    color: var(--encre);
+    font-family: "Instrument Sans", system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 34px;
+    padding: 74px 86px;
+    position: relative;
+    overflow: hidden;
+  }
+  /* Rappel du bandeau chaud du site, sans rien qui attire l'oeil hors du texte. */
+  body::after {
+    content: "";
+    position: absolute;
+    inset: auto -160px -260px auto;
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    background: var(--fond-2);
+  }
+  .dessus { position: relative; z-index: 1; }
+  .marque {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.01em;
+    color: var(--accent);
+  }
+  h1 {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+    max-width: 17ch;
+  }
+  /* Le trait s'arrete avant le bas de la ligne : a cette taille, un degrade
+     ouvert jusqu'en bas se detacherait du mot au lieu de le surligner. */
+  .souligne {
+    background: linear-gradient(transparent 63%, var(--surligne) 63%, var(--surligne) 88%, transparent 88%);
+    padding: 0 2px;
+  }
+  p {
+    font-size: 30px;
+    line-height: 1.4;
+    color: var(--doux);
+    max-width: 26ch;
+  }
+  .pied {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 26px;
+    color: var(--doux);
+  }
+  .pastille {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 24px;
+    color: var(--vert);
+    border: 1px solid var(--filet);
+    border-radius: 999px;
+    padding: 9px 20px;
+    background: #fff;
+  }
+  .point {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--vert);
+  }
+</style>
+</head>
+<body>
+  <div class="marque dessus">Exzitech</div>
+  <h1 class="dessus">Des outils sur mesure<br>qui tournent <span class="souligne">vraiment</span>.</h1>
+  <p class="dessus">Développeur full-stack freelance : sites, applications web et de bureau, automatisation.</p>
+  <div class="pied dessus">
+    <span class="pastille"><span class="point"></span>Disponible</span>
+    <span>{{domaine}}</span>
+  </div>
+</body>
+</html>

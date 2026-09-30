@@ -213,7 +213,10 @@ module.exports = {
   },
 
   nl: {
-    meta_titre: "Tom · Freelance full-stack developer",
+    // « developer » plutôt que « ontwikkelaar » : c'est le terme qu'on cherche en
+    // Belgique. Le pays distingue ce titre de celui de la page anglaise, qui serait
+    // sinon identique au mot près.
+    meta_titre: "Tom · Freelance full-stack developer in België",
     meta_desc: "Freelance full-stack developer: websites, web- en desktopapplicaties, automatisering, zelf hosten voor kleine ondernemingen. Projecten die u online kunt uitproberen.",
     nav_offre: "Aanbod", nav_projets: "Projecten", nav_sites: "Websites", nav_contact: "Contact",
     dispo: "Beschikbaar voor nieuwe opdrachten",
